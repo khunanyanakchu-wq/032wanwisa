@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลการเดินทาง | เที่ยวบ้านเรา</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #29485E;
+            background: linear-gradient(135deg, #DDF2FF, #F4FAFF);
+        }
+
+        header {
+            background: #A7D8F5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .site-name {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px 15px;
+            color: #29485E;
+            text-decoration: none;
+            border-radius: 20px;
+            background: #F4FAFF;
+        }
+
+        nav a:hover,
+        nav a[aria-current="page"] {
+            background: #78BCE5;
+            color: white;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 35px 15px;
+            background: #C5E8FA;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        .banner h1 {
+            color: #245577;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(80, 140, 180, 0.12);
+        }
+
+        .card h2 {
+            color: #438BB8;
+        }
+
+        .travel {
+            background: #EAF6FF;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 12px;
+        }
+
+        .travel h3 {
+            margin-top: 0;
+            color: #397DA5;
+        }
+
+        .tip {
+            background: #FFF3D7;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #A7D8F5;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา 🌤️</p>
+
+    <nav aria-label="เมนูหลัก">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html" aria-current="page">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="banner">
+        <h1>🚗 ข้อมูลการเดินทาง</h1>
+        <p>แนะนำวิธีการเดินทางและเตรียมตัวก่อนออกท่องเที่ยว</p>
+    </section>
+
+    <section class="card">
+        <h2>🚌 วิธีการเดินทาง</h2>
+
+        <div class="travel">
+            <h3>🚗 เดินทางโดยรถยนต์ส่วนตัว</h3>
+            <p>สะดวกสบาย สามารถแวะเที่ยวตามสถานที่ต่าง ๆ ได้ตามต้องการ</p>
+        </div>
+
+        <div class="travel">
+            <h3>🚌 เดินทางโดยรถโดยสารประจำทาง</h3>
+            <p>ประหยัดค่าใช้จ่าย เหมาะสำหรับผู้ที่ไม่มีรถยนต์ส่วนตัว</p>
+        </div>
+
+        <div class="travel">
+            <h3>🚆 เดินทางโดยรถไฟ</h3>
+            <p>เหมาะสำหรับผู้ที่ต้องการเดินทางชมวิวและบรรยากาศระหว่างทาง</p>
+        </div>
+
+        <div class="travel">
+            <h3>🏍️ เดินทางโดยรถจักรยานยนต์</h3>
+            <p>เหมาะสำหรับการเดินทางระยะใกล้และท่องเที่ยวในพื้นที่</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>🗺️ การเตรียมตัวก่อนเดินทาง</h2>
+        <ul>
+            <li>ตรวจสอบเส้นทางก่อนออกเดินทาง</li>
+            <li>ตรวจสอบสภาพรถให้พร้อมใช้งาน</li>
+            <li>ตรวจสอบสภาพอากาศ</li>
+            <li>เตรียมเงินและเอกสารสำคัญ</li>
+            <li>พักผ่อนให้เพียงพอก่อนเดินทาง</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>💡 คำแนะนำในการเดินทาง</h2>
+        <div class="tip">
+            <p>
+                ควรขับขี่ด้วยความระมัดระวัง ปฏิบัติตามกฎจราจร
+                คาดเข็มขัดนิรภัย และสวมหมวกกันน็อกทุกครั้ง
+                เพื่อความปลอดภัยในการเดินทาง
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>จัดทำโดย: ใส่ชื่อและรหัสนักเรียน</p>
+    <p>ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+</body>
+</html>

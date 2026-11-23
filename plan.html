@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วางแผนเที่ยว | เที่ยวบ้านเรา</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #29485E;
+            background: linear-gradient(135deg, #DDF2FF, #F4FAFF, #EAF6FF);
+        }
+
+        header {
+            background: #A7D8F5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .site-name {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            padding: 10px 15px;
+            color: #29485E;
+            text-decoration: none;
+            border-radius: 20px;
+            background: #F4FAFF;
+        }
+
+        nav a:hover,
+        nav a[aria-current="page"] {
+            background: #78BCE5;
+            color: white;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 35px 15px;
+            background: #C5E8FA;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        .banner h1 {
+            color: #245577;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(80, 140, 180, 0.12);
+        }
+
+        .card h2 {
+            color: #438BB8;
+        }
+
+        .day {
+            background: #EAF6FF;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 12px;
+        }
+
+        .day h3 {
+            margin-top: 0;
+            color: #397DA5;
+        }
+
+        .tip {
+            background: #FFF3D7;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #A7D8F5;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา 🌤️</p>
+
+    <nav aria-label="เมนูหลัก">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html" aria-current="page">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="banner">
+        <h1>🗓️ วางแผนเที่ยวในหนึ่งวัน</h1>
+        <p>จัดตารางเที่ยวให้สนุก เดินทางสะดวก และใช้เวลาได้อย่างคุ้มค่า</p>
+    </section>
+
+    <section class="card">
+        <h2>📍 ตัวอย่างตารางเที่ยว</h2>
+
+        <div class="day">
+            <h3>🌅 08.00 - 09.00 น. เริ่มต้นวันใหม่</h3>
+            <p>รับประทานอาหารเช้าและเตรียมตัวออกเดินทาง</p>
+        </div>
+
+        <div class="day">
+            <h3>🏞️ 09.00 - 11.00 น. เที่ยวชมสถานที่</h3>
+            <p>เดินชมสถานที่ท่องเที่ยวและถ่ายภาพเก็บความประทับใจ</p>
+        </div>
+
+        <div class="day">
+            <h3>🍜 11.00 - 13.00 น. พักรับประทานอาหาร</h3>
+            <p>แวะชิมอาหารท้องถิ่นและพักผ่อน</p>
+        </div>
+
+        <div class="day">
+            <h3>🌊 13.00 - 15.00 น. พักผ่อนชมวิว</h3>
+            <p>เที่ยวชมธรรมชาติและบรรยากาศโดยรอบ</p>
+        </div>
+
+        <div class="day">
+            <h3>🏡 15.00 - 16.00 น. เดินทางกลับ</h3>
+            <p>เก็บสัมภาระและเดินทางกลับบ้านอย่างปลอดภัย</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>🎒 สิ่งที่ควรเตรียมก่อนเดินทาง</h2>
+        <ul>
+            <li>โทรศัพท์มือถือและอุปกรณ์ชาร์จ</li>
+            <li>กระเป๋าสตางค์และเงินสด</li>
+            <li>หมวกหรือร่มกันแดด</li>
+            <li>น้ำดื่มและของใช้ส่วนตัว</li>
+            <li>ตรวจสอบสภาพอากาศก่อนออกเดินทาง</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>💡 เคล็ดลับการท่องเที่ยว</h2>
+        <div class="tip">
+            <p>ควรวางแผนเส้นทางล่วงหน้า ตรวจสอบเวลาเปิด-ปิดของสถานที่ และรักษาความสะอาด ไม่ทิ้งขยะในแหล่งท่องเที่ยว</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>จัดทำโดย: ใส่ชื่อและรหัสนักเรียน</p>
+    <p>ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ที่เที่ยว | เที่ยวบ้านเรา</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #29485E;
+            background: linear-gradient(
+                180deg,
+                #DDF2FF,
+                #F4FAFF,
+                #EAF6FF
+            );
+        }
+
+        header {
+            background: #A7D8F5;
+            color: #23445A;
+            padding: 18px 30px;
+            box-shadow: 0 3px 10px rgba(50, 100, 140, 0.12);
+        }
+
+        .site-name {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 5px 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #23445A;
+            font-weight: bold;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a[aria-current="page"] {
+            background: white;
+            color: #277EAE;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .banner {
+            text-align: center;
+            background: linear-gradient(
+                135deg,
+                #B5E2FA,
+                #E2F4FF
+            );
+            padding: 45px 20px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 5px 15px rgba(65, 140, 180, 0.12);
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            color: #245D7D;
+            margin: 0 0 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #347BA5;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .place-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid #D2EAF8;
+            box-shadow: 0 5px 15px rgba(60, 130, 170, 0.12);
+            transition: 0.3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 22px rgba(60, 130, 170, 0.2);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .place-info {
+            padding: 22px;
+        }
+
+        .place-info h2 {
+            color: #347BA5;
+            font-size: 23px;
+            margin-top: 5px;
+        }
+
+        .place-info p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .number {
+            display: inline-block;
+            background: #DDF1FC;
+            color: #347BA5;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .bottom-box {
+            text-align: center;
+            background: #CDEBFC;
+            padding: 30px 20px;
+            border-radius: 18px;
+            margin-top: 35px;
+        }
+
+        .bottom-box h2 {
+            color: #245D7D;
+        }
+
+        .button {
+            display: inline-block;
+            background: #78BCE3;
+            color: #173D55;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #58A7D6;
+            color: white;
+        }
+
+        footer {
+            background: #A7D8F5;
+            color: #23445A;
+            padding: 25px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 650px) {
+            nav ul {
+                gap: 5px;
+            }
+
+            nav a {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .place-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .banner h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <p class="site-name">เที่ยวบ้านเรา</p>
+
+        <nav aria-label="เมนูหลัก">
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="places.html" aria-current="page">ที่เที่ยว</a></li>
+                <li><a href="food.html">อาหาร</a></li>
+                <li><a href="plan.html">วางแผนเที่ยว</a></li>
+                <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="banner">
+
+            <h1>สถานที่ท่องเที่ยว 💙</h1>
+
+            <p>
+                เปิดประสบการณ์เที่ยวบ้านเรา
+                สัมผัสธรรมชาติและสถานที่สวยงาม
+                ในจังหวัดประจวบคีรีขันธ์
+            </p>
+
+        </section>
+
+        <h2 class="section-title">
+            ✦ แนะนำสถานที่ท่องเที่ยว ✦
+        </h2>
+
+        <section class="place-gallery">
+            <div class="place-card">
+
+                <img src="images/KLM.jpg"
+                     alt="วิวภูเขาและทะเล">
+
+                <div class="place-info">
+
+                    <span class="number">สถานที่ 01</span>
+
+                    <h2>เขาล้อมหมวก</h2>
+
+                    <p>
+                        ชมวิวทะเลและภูเขาที่สวยงาม
+                        สัมผัสธรรมชาติและทัศนียภาพ
+                        ของอ่าวประจวบคีรีขันธ์
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="place-card">
+
+                <img src="images/lukmuang.jpg"
+                     alt="ศาลหลักเมืองประจวบคีรีขันธ์">
+
+                <div class="place-info">
+
+                    <span class="number">สถานที่ 02</span>
+
+                    <h2>ศาลหลักเมืองประจวบคีรีขันธ์</h2>
+
+                    <p>
+                        สถานที่สำคัญของจังหวัด
+                        โดดเด่นด้วยสถาปัตยกรรมที่สวยงาม
+                        และมีเอกลักษณ์
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="place-card">
+
+                <img src="images/aomanow.jpg"
+                     alt="จุดถ่ายภาพโลมา">
+
+                <div class="place-info">
+
+                    <span class="number">สถานที่ 03</span>
+
+                    <h2>อ่าวมะนาว</h2>
+
+                    <p>
+                        สถานที่พักผ่อนริมทะเล
+                        บรรยากาศสวยงาม เหมาะสำหรับชมวิว
+                        และถ่ายภาพความประทับใจ
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="place-card">
+
+                <img src="images/Kaow.jpg"
+                     alt="วิววัดและภูเขา">
+
+                <div class="place-info">
+
+                    <span class="number">สถานที่ 04</span>
+
+                    <h2>เขาช่องกระจก</h2>
+
+                    <p>
+                        จุดชมวิวเมืองประจวบคีรีขันธ์
+                        สามารถชมทัศนียภาพของเมือง
+                        ทะเลและภูเขาได้อย่างสวยงาม
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bottom-box">
+
+            <h2>💙 เที่ยวบ้านเรา แล้วคุณจะหลงรัก</h2>
+
+            <p>
+                มาสัมผัสความสวยงามของจังหวัดประจวบคีรีขันธ์
+                และสร้างความทรงจำดี ๆ ไปด้วยกัน
+            </p>
+
+            <a class="button" href="index.html">
+                กลับหน้าแรก
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            เที่ยวบ้านเรา | ท่องเที่ยวจังหวัดประจวบคีรีขันธ์
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
